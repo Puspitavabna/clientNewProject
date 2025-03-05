@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
+
+
+.circleCard {
+  background-color: green;
+  transform-origin: center;
+  position: absolute;
+  top:-0.2;
+}
+
+
+
+.circleCard:nth-child(1) {
+  transform: rotate(0deg) translateY(-100px);
+}
+
+.circleCard:nth-child(2) {
+  transform: rotate(10deg) translate(250px);
+}
+
+.circleCard:nth-child(3) {
+  transform: rotate(20deg) translateX(350px) translateY(200px);
+}
+
+.circleCard:nth-child(4) {
+  transform: rotate(50deg) translateX(400px) translateY(250px);
+}
+
+.circleCard:nth-child(5) {
+  transform: rotate(80deg) translateX(380px) translateY(250px);
+}
+
+.circleCard:nth-child(6) {
+  transform: rotate(90deg) translateX(200px) translateY(300px);
+}
+
+.circleCard:nth-child(7) {
+  transform: rotate(160deg) translateX(200px) translateY(100px);
+}
+
+
+
+.circleCardContainer{
+
+
+}
+
+
+.custom-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sidebar {
+  @apply flex items-center gap-x-4 rounded-md px-4 py-3 text-lg font-medium transition-all duration-75 hover:bg-[#151B54] hover:font-semibold hover:text-white;
+}
+
+.navbar {
+  @apply text-[#000000B2] hover:text-[#151B54];
+}
+
+.flip-card {
+  perspective: 1000px; /* Adds perspective for 3D effect */
+}
+.submit-footer-input {
+  width: 300px;
+}
+.left-submit-btn {
+  left: 75%;
+}
+.flip-card-inner {
+  transition: transform 0.6s; /* Smooth transition on transform */
+  transform-style: preserve-3d; /* Preserve 3D transformation */
+  position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Flips the card on hover */
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden; /* Hides the back of the card initially */
+}
+
+.flip-card-back {
+  transform: rotateY(180deg); /* Initially hidden, flipped 180 degrees */
+}
+
+.hero-heading {
+  @apply max-w-[740px] text-3xl font-bold capitalize leading-[60px];
+}
+
+.tool-container {
+  @apply flex h-16 w-16 items-center justify-center rounded-full;
+}
