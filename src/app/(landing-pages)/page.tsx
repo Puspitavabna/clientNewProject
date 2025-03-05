@@ -393,7 +393,7 @@ const Home = () => {
       {/* Service Section  <div className="bg-gradient-to-br from-[#ffffff] to-[#ffffff] p-14">
         <Service />
       </div> */}
-    
+
 
 
 
@@ -937,19 +937,11 @@ const Feedback = async () => {
   const employeeData = await getEmployeeData();
   return (
     <section className="flex flex-col items-center pb-24">
-      {/* Header Section */}
-      <div className="mb-10 flex flex-col items-center gap-y-1">
 
-        <h2 className="mt-3 text-4xl font-bold font-poppins">Our Top Employees</h2>
-        <p className="mt-[19px] text-2xl">
-          Discover what our clients say about our transformative IT and civil
-          engineering solutions and project success
-        </p>
-      </div>
       {/* Stretched Oval Container */}
       <div className="flex w-full flex-col items-center mt-[19px] px-14">
         {/* Oval Shape */}
-        <div className="relative md:flex w-[100%] md:space-y-0 space-y-20 items-center justify-around rounded-full bg-tertiary">
+        <div className="relative md:flex w-[100%] md:space-y-0 space-y-20 items-center justify-around rounded-full">
           {/* {[
             {
               image: "/default-avatar.png",
@@ -984,8 +976,10 @@ const Feedback = async () => {
 
 
                 <div className="max-w-5xl mx-auto text-center p-6">
-                  <h2 className="text-gray-800 text-lg font-light uppercase">OUR employees</h2>
-                  <h1 className="text-3xl font-semibold text-gray-900">meet our <span className="text-blue-600">Employees</span></h1>
+                  <div className="text-left">
+                    <h2 className="text-gray-800 text-lg font-light uppercase">OUR employees</h2>
+                    <h1 className="text-3xl font-semibold text-gray-900">meet our <span className="text-blue-600">Employees</span></h1>
+                  </div>
 
                   <div className="flex justify-center items-center mt-10 space-x-4">
                     <div className="text-center">
