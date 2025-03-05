@@ -61,6 +61,7 @@ function Notice() {
     actions.getAll('notice/all', 'notices')
   }, [actions])
 
+ 
   return (
     <>
       <header className="flex flex-col gap-y-4 bg-tertiary">
@@ -70,8 +71,7 @@ function Notice() {
       <main className="bg-gradient-to-br from-[#F5F5F5] to-[#F5F5F5] p-14 pb-20">
         <div className="mb-20 h-auto w-full overflow-hidden rounded-sm border border-transparent pb-6 shadow-lg">
           {/* Pass data to the client-side component */}
-          <NoticeTable notices={dummyData}/>
-         {noticeData ? <NoticeTable notices={noticeData}/> : <NoticeTable notices={dummyData}/>}
+         {noticeData?.length > 0 ? <NoticeTable notices={noticeData}/> : <NoticeTable notices={dummyData}/>}
         </div>
         <Paginate />
       </main>

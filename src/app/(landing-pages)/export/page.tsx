@@ -40,7 +40,7 @@ function Export() {
 
   const data = ["ALL", "MARKET CONSTRUCTION", "MOSAUE CONSTRUCTIION", "AIRPORT CONSTRUCTION", "SCHOOL CONSTRUCTION", "HOME CONSTRUCTION", "ROAD CONSTRUCTION"]
 
-
+console.log(projectData,'projectData')
   return (
     <>
       <header className="flex flex-col gap-y-4 bg-tertiary">

@@ -19,8 +19,7 @@ export default function CommonCard({
 }) {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-    console.log(type, 'type')
-    debugger
+ 
 
     const getCard = () => {
         if (type == "technical") {

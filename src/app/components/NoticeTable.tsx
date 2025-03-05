@@ -34,7 +34,6 @@ export const NoticeTable: React.FC<TableProps> = ({ notices }) => {
   if (notices.length === 0) {
     return <p>No notices available.</p>; // Handle empty data gracefully
   }
-
   return (
     <>
       <table className="mb-6 w-full text-xs">
@@ -48,7 +47,7 @@ export const NoticeTable: React.FC<TableProps> = ({ notices }) => {
           </tr>
         </thead>
         <tbody className="text-center bg-[#FAFBFE] w-full">
-          {notices?.length > 0 ? notices.map((notice, index) => (
+          {notices?.length > 0 ? notices?.map((notice, index) => (
             <tr
               key={notice.id}
               className="bg-[#FAFBFE] border-b border-tertiary"
