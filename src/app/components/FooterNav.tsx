@@ -19,7 +19,7 @@ import {
 import chatPhone from "../../../public/chat-phone.png";
 //import chatbot from "../../public/icons/live1.png";
 import chatbot from "../../../public/live-chat.png";
-import fax from "../../../public/Fax.png";
+import fax from "../../../public/fax.png";
 import letter from "../../../public/Letter.png";
 import livechaticon from "../../../public/live-chat 9.png";
 import map from "../../../public/Map Point Favourite.png";
